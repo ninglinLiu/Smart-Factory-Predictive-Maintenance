@@ -1,0 +1,31 @@
+feature_name,formula,rationale,deployable_at_prediction_time
+sensor_11_slope20,Linear slope of sensor_11 over 20-cycle window per engine,Captures degradation speed; A1 Finding 5 monotonic lifecycle separation,True
+sensor_4_slope20,Linear slope of sensor_4 over 20-cycle window per engine,Captures degradation speed; A1 Finding 5 monotonic lifecycle separation,True
+sensor_12_slope20,Linear slope of sensor_12 over 20-cycle window per engine,Captures degradation speed; A1 Finding 5 monotonic lifecycle separation,True
+sensor_11_std20,Rolling std of sensor_11 over 20 cycles,Late-stage variance inflation observed in A1 Figure 7,True
+sensor_4_std20,Rolling std of sensor_4 over 20 cycles,Late-stage variance inflation observed in A1 Figure 7,True
+sensor_12_std20,Rolling std of sensor_12 over 20 cycles,Late-stage variance inflation observed in A1 Figure 7,True
+sensor_11_min20,20-cycle rolling min of sensor_11,Range compression/expansion near failure,True
+sensor_11_max20,20-cycle rolling max of sensor_11,Range compression/expansion near failure,True
+sensor_4_min20,20-cycle rolling min of sensor_4,Range compression/expansion near failure,True
+sensor_4_max20,20-cycle rolling max of sensor_4,Range compression/expansion near failure,True
+sensor_4_x_sensor_11,Standardized sensor_4 × standardized sensor_11,Interaction between two strongest RUL-correlated channels (A1 Figure 9),True
+sensor_11_lag1,sensor_11 value lagged 1 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_11_lag5,sensor_11 value lagged 5 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_11_lag10,sensor_11 value lagged 10 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_4_lag1,sensor_4 value lagged 1 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_4_lag5,sensor_4 value lagged 5 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_4_lag10,sensor_4 value lagged 10 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_12_lag1,sensor_12 value lagged 1 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_12_lag5,sensor_12 value lagged 5 cycles within engine,Temporal memory of degradation trajectory,True
+sensor_12_lag10,sensor_12 value lagged 10 cycles within engine,Temporal memory of degradation trajectory,True
+setting1_change,|diff(operational_setting_1)| per engine,Detects operational regime shifts,True
+setting2_change,|diff(operational_setting_2)| per engine,Detects operational regime shifts,True
+baseline_deviation,Euclidean distance from engine early-life (≤30 cycles) sensor mean,Engine-specific wear offset beyond calendar age,True
+sensor_11_ewma_a01,EWMA(α=0.1) of sensor_11 per engine,Smoothed degradation trend with configurable memory,True
+sensor_11_ewma_a03,EWMA(α=0.3) of sensor_11 per engine,Smoothed degradation trend with configurable memory,True
+sensor_4_ewma_a01,EWMA(α=0.1) of sensor_4 per engine,Smoothed degradation trend with configurable memory,True
+sensor_4_ewma_a03,EWMA(α=0.3) of sensor_4 per engine,Smoothed degradation trend with configurable memory,True
+pca_score_1,PC1 of standardized top-10 sensors,A1 PCA explained ~74.7% variance on PC1 with life-stage stratification,True
+pca_score_2,PC2 of standardized top-10 sensors,Secondary latent degradation axis,True
+time_since_anomaly_s11,Cycles since |z-score|>2 on sensor_11 rolling window,Duration since last anomalous reading on primary sensor,True

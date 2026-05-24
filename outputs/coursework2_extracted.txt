@@ -1,0 +1,1021 @@
+XJTLU Entrepreneur College (Taicang) Cover Sheet
+Module code and Title
+IOT106TC Big Data Analytics
+School Title
+School of Internet of Things
+Assignment Title
+Assignment 2: Predictive Modeling & Interactive Dashboard
+Submission Deadline
+11:59 PM China time (UTC+8 Beijing) on Sunday 31 May 2026
+Final Word Count
+N/A
+If you agree to let the university use your work anonymously for teaching and learning purposes, please type “yes” here.
+I certify that I have read and understood the University’s Policy for dealing with Plagiarism, Collusion and the Fabrication of Data (available on Learning Mall Online). With reference to this policy I certify that:
+My work does not contain any instances of plagiarism and/or collusion.
+My work does not contain any fabricated data.
+By uploading my assignment onto Learning Mall Online, I formally declare that all of the above information is true to the best of my knowledge and belief.
+Scoring – For Tutor Use
+Student ID
+Stage of Marking
+Marker
+Code
+Learning Outcomes Achieved （F/P/M/D）
+(please modify as appropriate)
+Final
+Score
+A
+B
+C
+1st Marker – red pen
+Moderation
+– green pen
+IM
+Initials
+The original mark has been accepted by the moderator (please circle as appropriate):
+Y / N
+Data entry and score calculation have been checked by another tutor (please circle):
+Y
+2nd Marker if needed – green pen
+For Academic Office Use
+Possible Academic Infringement (please tick as appropriate)
+Date
+Received
+Days late
+Late Penalty
+☐ Category A
+Total Academic Infringement Penalty (A,B, C, D, E, Please modify where necessary) _____________________
+☐  Category B
+☐  Category C
+☐  Category D
+☐  Category E
+GENERIC TASK DESCRIPTIONS
+This coursework is designed to assess students' understanding of Big Data Analytics (BDA) concepts, their ability to identify BDA applications for business improvement, and their proficiency in using Python for data analysis and Tableau for data visualization. The project will be submitted as a report with Jupyter Notebook and Tableau report.
+Additionally, when using different sources, you must ensure that they are correctly cited and referenced, and you need to synthesize your own ideas and present them in your own words.
+LEARNING OUTCOMES
+A. Demonstrate a solid understanding of concepts, processes, and issues related to Big Data Analytics (BDA).
+B. Identify applications of BDA that can help improve business operations.
+C. Determine the appropriate use of analysis methods, algorithms, technologies, tools, and software packages to support data analysis involving practical scenarios.
+D. Demonstrate familiarity with a relevant programming language (such as Python) to BDA to apply BDA algorithms and tools.
+GENERIC MARKING CRITERIA
+The following generic criteria will be used to assess the coursework.
+Grade
+Point Scale
+Criteria to be satisfied
+A
+81+
+First
+Outstanding work that is at the upper limit of performance.
+Work would be worthy of dissemination under appropriate conditions.
+Mastery of advanced methods and techniques at a level beyond that explicitly taught.
+Ability to synthesise and employ in an original way ideas from across the subject.
+Outstanding command of critical analysis and judgment.
+B
+70 - 80
+First
+Excellent range and depth of attainment of intended learning outcomes.
+Mastery of a wide range of methods and techniques.
+Evidence of study and originality clearly beyond the bounds of what has been taught.
+Able to display a command of critical thinking, analysis and judgment.
+C
+60 - 69
+Upper Second
+Attained all the intended learning outcomes for a module or assessment.
+Able to use well a range of methods and techniques to come to conclusions.
+Very good presentation of material.
+Able to employ critical analysis and judgement.
+D
+50- 59
+Lower Second
+Able to use most of the methods and techniques taught.
+Evidence of study and comprehension of what has been taught
+Adequate presentation of material.
+Some grasp of issues and concepts underlying the techniques and material taught.
+E
+40 - 49
+Third
+Evidence of study and comprehension of what has been taught, but grasp insecure.
+Poorly presented.
+Some grasp of the issues and concepts underlying the techniques and material taught, but weak and incomplete.
+F
+0 - 39
+Fail
+Weak and incomplete grasp of what has been taught.
+Deficient understanding of the issues and concepts underlying the techniques and material taught.
+Lack of ability to use at all or the right methods and techniques taught.
+Inadequately and incoherently presented.
+Wholly deficient grasp of what has been taught.
+G
+0
+Fail
+No significant assessable material, absent, or assessment missing a “must pass” component.
+Continuation from Assignment 1
+IMPORTANT: This assignment MUST use the SAME dataset and scenario you chose for Assignment 1.
+Why Continuous Project?
+Reduced workload: No need to repeat data cleaning/understanding (25-30% time savings)
+Deeper insights: Build on your EDA findings from Assignment 1
+Real-world workflow: Mirrors actual data science projects (EDA → Modeling → Deployment)
+Better quality: More time for modeling and dashboard refinement
+Assignment Flow:
+Assignment 1 (Completed): EDA + Business Insights + Data Cleaning
+Assignment 2 (You are here): Predictive Modeling + Interactive Dashboard + Implementation
+Assignment Objectives
+This assignment tests your ability to:
+Design and implement predictive models based on EDA insights
+Engineer effective features that capture predictive signals
+Evaluate and compare models using appropriate metrics
+Build interactive dashboards that communicate insights to stakeholders
+Generate actionable business recommendations with clear ROI
+Collaborate effectively with AI tools across the entire project lifecycle
+Deliver a production-worthy solution with clear business value
+_______________________________________________________________________
+Scenario Continuation
+Continuity from Assignment 1: You MUST use the SAME scenario you chose for Assignment 1. However, grading is scenario-calibrated to ensure fairness:
+Each scenario has different but comparable complexity in modeling
+Expectations are tailored to each scenario's characteristics
+Equal effort = equal grades, regardless of scenario choice
+Scenario-Specific Modelling Expectations
+Smart Factory (NASA):
+Expected complexity: HIGH (multi-variable time series, RUL regression)
+Focus: Sensor degradation modelling, feature engineering from operational settings
+What earns "excellent": Creative sensor features, robust RUL prediction
+Smart Building (UCI):
+Expected complexity: HIGH (large-scale time series, forecasting)
+Focus: Temporal feature engineering, multi-scale pattern modeling
+What earns "excellent": Multi-scale temporal features, accurate peak forecasting
+Retail (Walmart):
+Expected complexity: MEDIUM-HIGH (hierarchical time series, external factors)
+Focus: Holiday/economic factor integration, store-level modeling
+What earns "excellent": Sophisticated external factor modeling, store-specific insights
+_______________________________________________________________________
+You MUST continue with your chosen scenario from Assignment 1:
+🏢 Scenario 1: Smart Factory Predictive Maintenance
+Goal: Predict equipment Remaining Useful Life (RUL)
+Models: Regression models to predict cycles until failure
+Dashboard: Real-time equipment health monitoring with failure risk alerts
+Stakeholders: Plant Manager, Maintenance Director, Finance Director
+🏢 Scenario 2: Smart Building Energy Optimization
+Goal: Forecast energy consumption / detect anomalies
+Models: Time series forecasting or anomaly detection
+Dashboard: Energy consumption monitoring with optimization insights
+Stakeholders: Building Manager, Sustainability Officer, Facilities Director
+🛍️ Scenario 3: Retail Demand Forecasting
+Goal: Predict future sales demand
+Models: Time series forecasting or regression
+Dashboard: Inventory optimization dashboard with demand predictions
+Stakeholders: Store Manager, Supply Chain Director, Marketing Director
+_______________________________________________________________________
+Part 1: Predictive Modelling (40 points)
+1.1 Feature Engineering (8 points)
+Building on Assignment 1 EDA insights, create advanced features for modelling:
+1.1.1 Temporal Features (for time series)
+Lag features: Previous values (lag1, lag24, lag168 for weekly)
+Rolling window features: Moving averages, std, min, max
+Time-based features: Hour of day, day of week, month, weekend flags
+Seasonal features: Fourier terms, cyclical encoding
+1.1.2 Domain-Specific Features
+Scenario 1 (Smart Factory):
+Sensor degradation trends (slope over time)
+Sensor interaction features (sensor1 × sensor2)
+Operational regime changes (setting changes)
+Rolling statistics per engine
+Scenario 2 (Smart Building):
+Time-of-day consumption patterns
+Day-type profiles (weekday/weekend/holiday)
+Weather interaction features (temp × humidity)
+Appliance-specific patterns (sub-metering ratios)
+Scenario 3 (Retail):
+Holiday proximity features
+Seasonal indicators
+Economic factors interaction (CPI × unemployment)
+Store-specific patterns
+1.1.3 Feature Selection
+Justify your final feature set:
+Correlation analysis: Remove highly correlated features
+Feature importance: Use preliminary models to rank features
+Domain knowledge: Keep features known to be predictive
+Computational cost: Balance predictive power vs model complexity
+Deliverable:
+Document at least 10 engineered features with rationale
+Show feature importance analysis
+Final feature list with justification
+🤖 AI Collaboration Exercise:
+I'm building features for [scenario] predictive modeling.
+Assignment 1 insights showed:
+[Insight 1]
+[Insight 2]
+Current features: [List from Assignment 1]
+Please suggest:
+5-8 advanced features that would capture [specific pattern]
+Which features from Assignment 1 are most predictive? Why?
+Should I use feature selection techniques? Which ones?
+Write Python code to implement your top 5 feature ideas
+Consider: My goal is to predict [target variable].
+_______________________________________________________________________
+1.2 Model Development (12 points)
+Develop at least 2 different models:
+1.2.1 Model 1: Simple Baseline
+Choose one:
+Linear Regression (for regression tasks)
+Logistic Regression (for classification tasks)
+Moving Average / Exponential Smoothing (for time series)
+Requirements:
+Implement from scratch or using scikit-learn
+Train on training set
+Evaluate on test set
+Document model parameters
+Purpose: Establish performance baseline
+1.2.2 Model 2: Advanced Model
+Choose one (or more):
+Random Forest (recommended for tabular data)
+Gradient Boosting (XGBoost, LightGBM, CatBoost)
+Support Vector Machines
+Neural Network (simple MLP using Keras/sklearn)
+Time Series Model (ARIMA, Prophet - for time series tasks)
+Requirements:
+Hyperparameter tuning (GridSearchCV or RandomizedSearchCV)
+Cross-validation (5-fold or 10-fold)
+Feature importance analysis
+Model interpretation
+🤖 AI Collaboration Exercise - Model Selection:
+I'm predicting [target variable] for [scenario].
+Data characteristics:
+[Number] samples, [number] features
+[Data type]: time series / cross-sectional
+[Target type]: continuous / categorical
+Please help me:
+Which 2-3 algorithms would work best for this problem? Why?
+Compare pros/cons of each algorithm in my context
+What hyperparameters should I tune for each?
+Write code to implement Model 1 and Model 2 with tuning
+_______________________________________________________________________
+1.3 Model Evaluation (12 points)
+Comprehensive evaluation using multiple metrics:
+1.3.1 Regression Metrics (if predicting continuous values)
+MAE (Mean Absolute Error): Average error magnitude
+RMSE (Root Mean Squared Error): Penalizes large errors
+R² (R-squared): Proportion of variance explained
+MAPE (Mean Absolute Percentage Error): Relative error (optional)
+1.3.2 Classification Metrics (if predicting categories)
+Accuracy: Overall correctness
+Precision: True positives / predicted positives
+Recall (Sensitivity): True positives / actual positives
+F1 Score: Harmonic mean of precision and recall
+ROC-AUC: Area under ROC curve
+1.3.3 Time Series Metrics (if forecasting)
+MAE, RMSE as above
+MAPE for relative error
+Forecast skill: Compare to naive baseline (e.g., tomorrow = today)
+1.3.4 Cross-Validation
+K-fold cross-validation (k=5 or 10)
+Report mean and std of metrics across folds
+Assess model stability
+1.3.5 Error Analysis
+Error distribution: Plot residuals/prediction errors
+Worst predictions: Analyze cases where model performs poorly
+Systematic errors: Look for patterns in errors (by time, by category)
+Confidence intervals: Quantify prediction uncertainty
+Deliverable:
+Comprehensive evaluation table comparing models
+Visualizations:
+Actual vs Predicted scatter plot
+Error distribution histogram
+Time series of predictions vs actual (if applicable)
+Feature importance chart (for tree-based models)
+Error analysis with insights
+🤖 AI Collaboration Exercise - Model Evaluation:
+My model results:
+Model 1 (algorithm): MAE=[X], R²=[Y]
+Model 2 (algorithm): MAE=[X], R²=[Y]
+Please help me interpret:
+Which model performed better? Is the difference significant?
+Are these results good for [your scenario]? Explain context
+How can I improve the weaker model?
+Write code to:
+- Perform cross-validation    - Generate comprehensive evaluation plots    - Analyze prediction errors
+_______________________________________________________________________
+1.4 Model Comparison and Selection (8 points)
+1.4.1 Comparative Analysis
+Create a comparison table:
+Metric
+Model 1 (Baseline)
+Model 2 (Advanced)
+Improvement
+--------
+-------------------
+-------------------
+-------------
+MAE
+[value]
+[value]
+[%]
+RMSE
+[value]
+[value]
+[%]
+R²
+[value]
+[value]
+[%]
+Training Time
+[seconds]
+[seconds]
+[%]
+Inference Time
+[seconds]
+[seconds]
+[%]
+1.4.2 Final Model Selection
+Choose your final model and justify:
+Chosen Model: [Model 1 or Model 2 or Ensemble]
+Justification:
+Performance: Why is this model's performance superior?
+Complexity: Is the performance gain worth the added complexity?
+Interpretability: Can stakeholders understand the model?
+Deployment: Is this model suitable for production deployment?
+Business constraints: Does it meet stakeholder requirements?
+Consider Ensemble:
+Combine multiple models (e.g., average predictions)
+Often improves performance
+More complex but worth exploring
+Deliverable:
+Clear statement of final model choice
+1-2 paragraph justification with business context
+_______________________________________________________________________
+Part 2: Interactive Dashboard (30 points)
+2.1 Dashboard Design (10 points)
+2.1.1 Target Audience & Use Cases
+Primary Audience: [Business stakeholders - non-technical]
+Key Use Cases:
+Monitoring: What do stakeholders need to track daily/weekly?
+Decision-Making: What decisions will this dashboard inform?
+Alerting: What threshold-based alerts are needed?
+Drill-Down: How can users explore details?
+Scenario-Specific Examples:
+Smart Factory:
+Use Case 1: "Which equipment needs maintenance this week?"
+Use Case 2: "What's the current fleet health status?"
+Use Case 3: "Show me equipment at high risk of failure."
+Smart Building:
+Use Case 1: "Where are we wasting energy?"
+Use Case 2: "How much energy will we consume next week?"
+Use Case 3: "Compare this building to benchmarks."
+Retail:
+Use Case 1: "What should we order for next week?"
+Use Case 2: "Which stores are underperforming?"
+Use Case 3: "How will promotions affect demand?"
+2.1.2 Dashboard Layout
+Wireframe or Mockup (hand-drawn or digital):
+Layout Principles:
+KPI cards at top for at-a-glance metrics
+Filters prominently displayed
+Most important visualization largest and centrally located
+Supporting charts on sides or bottom
+Recommendations clearly visible
+2.1.3 Color & Styling
+Color scheme: Professional, accessible (colorblind-friendly)
+Conditional formatting: Red/Yellow/Green for status
+Consistent fonts: Sans-serif, readable sizes
+Responsive: Works on different screen sizes
+🤖 AI Collaboration Exercise - Dashboard Design:
+I'm designing a dashboard for [scenario].
+Target audience: [Stakeholder roles] Key use cases:
+[Use case 1]
+[Use case 2]
+My model predicts [target variable] with [accuracy metric].
+Please help me design:
+What 5 KPIs should I show on top? (At-a-glance metrics)
+What visualizations are most impactful?
+How should I arrange them? (Suggest layout)
+What filters would be most useful?
+How can I make recommendations actionable?
+Focus on clarity for non-technical business stakeholders.
+_______________________________________________________________________
+2.2 Technical Implementation (15 points)
+Choose ONE implementation approach:
+Option A: Python-Based Dashboard
+Tools: Streamlit OR Plotly Dash
+Why Python?
+Full control over functionality
+Direct integration with your models
+Easy deployment (Streamlit Cloud free)
+Reproducible
+Requirements:
+Interactive filters: At least 3 filter types
+KPI cards: At least 3 key metrics
+Time series visualization: With zoom/pan
+Model predictions: Show predictions vs actual
+Feature importance: Display top features
+Recommendations panel: Dynamic recommendations
+Streamlit Example Structure (python):
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+# Page config
+st.set_page_config(page_title="Dashboard", layout="wide")
+# Title
+st.title("Smart Factory Predictive Maintenance")
+# Load data
+@st.cache_data
+def load_data():
+return pd.read_csv('your_cleaned_data.csv')
+df = load_data()
+# Sidebar filters
+st.sidebar.header("Filters")
+equipment_type = st.sidebar.multiselect("Select Equipment", df['type'].unique())
+date_range = st.sidebar.date_input("Date Range")
+# KPIs
+col1, col2, col3 = st.columns(3)
+col1.metric("Equipment Monitored", str(df['id'].nunique()))
+col2.metric("Avg RUL", f"{df['RUL'].mean():.0f} cycles")
+col3.metric("High Risk", str(len(df[df['RUL'] < 30])))
+# Visualizations
+# [Add your charts]
+# Recommendations
+st.subheader("Maintenance Recommendations")
+# [Generate based on predictions]
+Plotly Dash Example (python):
+from dash import Dash, dcc, html
+from dash.dependencies import Input, Output
+import plotly.express as px
+app = Dash(__name__)
+app.layout = html.Div([
+html.H1("Dashboard Title"),
+dcc.Dropdown(id='dropdown', options=[...]),
+dcc.Graph(id='main-chart'),
+# Add more components
+])
+@app.callback(
+Output('main-chart', 'figure'),
+[Input('dropdown', 'value')]
+)
+def update_chart(value):
+# Update logic
+return fig
+if __name__ == '__main__':
+app.run_server(debug=True)
+Option B: BI Tool Dashboard
+Tools: Tableau Public OR Power BI Desktop
+Why BI Tools?
+No coding required for visualizations
+Beautiful, professional-looking
+Easy interactivity
+Good for business stakeholder demos
+Requirements:
+Same components as Python option (KPIs, filters, charts, etc.)
+Data connection: Connect to your CSV file
+Calculated fields: Implement metrics in BI tool language
+Parameters/Filters: Interactive filtering
+Tooltips: Rich hover information
+Tableau Public:
+Download: https://public.tableau.com/en-us/s/download
+Free but public (can't share private data)
+Excellent visualization options
+Power BI Desktop:
+Download: https://www.microsoft.com/en-us/power-bi/desktop/
+Free, more privacy control
+Powerful DAX language for calculations
+Deliverable:
+Option A: .py files + screenshots + deployment link (if deployed)
+Option B: .pbix or .twb file + screenshots + demo video
+_______________________________________________________________________
+2.3 User Experience & Interactivity (5 points)
+2.3.1 Interactivity Requirements
+Filters work correctly: All filters update visualizations
+Cross-filtering: Clicking one chart filters others
+Tooltips: Rich hover information
+Responsive: Works on reasonable screen sizes
+Loading speed: Dashboard loads in <10 seconds
+2.3.2 Usability Testing
+Test with a friend/classmate (not familiar with your project):
+Can they understand what the dashboard shows?
+Can they find answers to key questions?
+Do filters work intuitively?
+Is anything confusing?
+Document feedback and improvements made.
+_______________________________________________________________________
+Part 3: Business Report (20 points)
+3.1 Executive Summary (1 page, 5 points)
+Write for senior management (non-technical):
+Structure:
+Problem Statement (2-3 sentences): What business problem did you solve?
+Approach (3-4 sentences): What did you do? (High-level, non-technical)
+Key Findings (3-4 bullet points): What did you discover?
+Recommendations (3-4 bullet points): What should stakeholders do?
+Business Impact (2-3 sentences): What value does this deliver? Quantify if possible.
+Tone: Professional, concise, business-focused Length: 150-200 words maximum
+Example:
+Smart Factory Predictive Maintenance System
+Problem: Equipment failures cause unplanned downtime, costing $500K annually. Our plant lacks a data-driven approach to schedule proactive maintenance.
+Approach: We analyzed 1M+ sensor readings from critical equipment and developed a machine learning model that predicts equipment remaining useful life (RUL). An interactive dashboard provides real-time visibility into equipment health.
+Key Findings: • 3 critical sensors are early warning indicators of failure (95% accuracy) • Current maintenance schedule is 40% inefficient (over-maintaining healthy equipment) • Failures can be predicted 30 cycles in advance, enabling proactive scheduling
+Recommendations: • Implement predictive maintenance scheduling based on model predictions • Focus monitoring on the 3 critical sensors for early warning • Reallocate maintenance budget from routine to predictive inspections
+Business Impact: Estimated 30% reduction in unplanned downtime ($150K annual savings), 20% reduction in maintenance costs ($100K annual savings). Total ROI: $250K/year.
+_______________________________________________________________________
+3.2 Technical Documentation (3-4 pages, 8 points)
+Write for technical stakeholders (data team, IT):
+3.2.1 Methodology
+Data Processing:
+Feature engineering approach
+Data splitting strategy (train/validation/test)
+Handling of class imbalance (if applicable)
+Modeling Approach:
+Algorithms tested and why
+Hyperparameter tuning process
+Cross-validation strategy
+Final model selection rationale
+Dashboard Architecture:
+Technology stack and why chosen
+Data flow (CSV → preprocessing → model → dashboard)
+Key components and interactions
+3.2.2 Model Performance
+Comprehensive results:
+Performance metrics table (all models tested)
+Feature importance analysis (top 10 features with interpretation)
+Error analysis (when does model perform poorly?)
+Limitations and assumptions
+Visualizations:
+Model comparison charts
+Feature importance plot
+Prediction error analysis
+ROC curve (if classification)
+3.2.3 Dashboard User Guide
+How to use the dashboard:
+Access: How to open/run the dashboard
+Filters: How to use each filter
+Interpretation: How to read each visualization
+Troubleshooting: Common issues and solutions
+_______________________________________________________________________
+3.3 Business Recommendations & Roadmap (2 pages, 7 points)
+3.3.1 Top 5 Recommendations
+Recommendation 1: [Action Title]
+Problem: [Current issue]
+Solution: [Specific action]
+Expected Impact: [Quantified benefit - $, %, time]
+Implementation: [Step-by-step approach]
+Timeline: [Short/medium/long-term]
+Owner: [Who should do this]
+Priority: [High/Medium/Low]
+Evidence: [Reference to your analysis]
+(Repeat for all 5 recommendations)
+Example:
+Recommendation 1: Implement Predictive Maintenance Scheduling
+Problem: Current maintenance is calendar-based (monthly), resulting in over-maintenance of healthy equipment and under-maintenance of degrading equipment.
+Solution: Use model predictions to schedule maintenance when RUL < 30 cycles. Implement a weekly review process to identify equipment needing maintenance.
+Expected Impact: • Reduce unplanned downtime by 30% ($150K/year savings) • Reduce maintenance costs by 20% ($100K/year savings) • Improve equipment lifespan by 15%
+Implementation:
+Week 1-2: Pilot on 5 pieces of equipment
+Week 3-4: Validate predictions vs actual failures
+Week 5-8: Roll out to entire fleet
+Ongoing: Weekly review and schedule adjustments
+Timeline: Short-term (8 weeks to full implementation) Owner: Maintenance Director Priority: High (direct cost savings)
+Evidence: Model achieves MAE = 15 cycles in RUL prediction, well within the 30-cycle action threshold. Feature importance shows sensors s11, s12, s4 are leading indicators.
+3.3.2 Implementation Roadmap
+Phase 1: Quick Wins (0-3 months)
+[Action 1]: [Description]
+[Action 2]: [Description]
+Expected value: [Quantify]
+Phase 2: Core Implementation (3-6 months)
+[Action 1]: [Description]
+[Action 2]: [Description]
+Expected value: [Quantify]
+Phase 3: Advanced Features (6-12 months)
+[Action 1]: [Description]
+[Action 2]: [Description]
+Expected value: [Quantify]
+Resource Requirements:
+Personnel: [Who is needed]
+Technology: [Software/hardware]
+Budget: [Estimated costs]
+Training: [Skills needed]
+_______________________________________________________________________
+Part 4: AI Collaboration Report (10 points)
+4.1 AI Usage Documentation (3-4 pages)
+Document AI assistance across all project phases:
+4.1.1 Planning Phase
+Project breakdown: How did AI help you break down the project?
+Task prioritization: What did AI suggest for task ordering?
+Technology selection: How did AI inform tool/algorithm choices?
+AI suggestions adopted: List with rationale
+AI suggestions rejected: List with sound reasoning
+4.1.2 Modeling Phase
+Algorithm selection: How did AI help choose algorithms?
+Feature engineering: What features did AI suggest? Which worked?
+Hyperparameter tuning: How did AI help with parameter optimization?
+Code debugging: How did AI help resolve errors?
+Model interpretation: How did AI explain results?
+4.1.3 Dashboard Phase
+Design input: How did AI inform dashboard layout and KPIs?
+Visualization selection: What chart types did AI recommend?
+Code generation: What dashboard code did AI help write?
+UX improvements: How did AI suggest usability enhancements?
+4.1.4 Report Writing Phase
+Structure: How did AI help organize the report?
+Clarity: How did AI improve technical writing?
+Visualizations: How did AI suggest figures/plots?
+Executive summary: How did AI refine business language?
+For each phase:
+Provide 2-3 specific examples of AI assistance
+Include AI conversation snippets (prompts + responses)
+Explain how AI input influenced your decisions
+Critical assessment: Was AI helpful? Misleading? When?
+_______________________________________________________________________
+4.2 Critical Reflection (2-3 pages)
+4.2.1 What AI Did Exceptionally Well
+Provide specific examples:
+Code generation: "AI wrote PySpark code in seconds that would have taken me hours"
+Debugging: "AI instantly identified that I forgot to scale features before training"
+Explanation: "AI explained Random Forest in simple terms I could understand"
+Brainstorming: "AI suggested 5 feature ideas I hadn't considered"
+4.2.2 What AI Struggled With
+Be honest about limitations:
+Domain knowledge: "AI didn't understand industry-specific constraints"
+Business context: "AI's recommendations were technically correct but not feasible"
+Code errors: "AI generated code with bugs I had to fix"
+Over-complication: "AI suggested complex models when simple ones worked better"
+4.2.3 How You Validated AI Outputs
+Show your critical thinking:
+Cross-checking: "I verified AI's code against official documentation"
+Testing: "I tested AI's suggestions on small data samples first"
+Domain validation: "I checked AI's recommendations with industry best practices"
+Multiple sources: "I compared suggestions from multiple AI tools"
+4.2.4 Key Learnings About AI Collaboration
+Reflect on the process:
+Effective prompting: What prompt structures worked best?
+Iteration: How did you refine prompts to get better outputs?
+Knowing when to use AI: Which tasks were best suited for AI?
+Human-AI division of labor: What should humans do vs AI?
+4.2.5 Examples of Rejecting AI Suggestions
+Demonstrate critical thinking:
+Example 1: "AI suggested XGBoost, but I chose Random Forest because..."
+Rationale: [Explain why your choice was better]
+Outcome: [Did your choice work better?]
+Example 2: "AI recommended 50 features, but I used 15 because..."
+Rationale: [Explain trade-offs]
+Outcome: [Was simpler model better?]
+Minimum 3 examples where you rejected AI advice with sound reasoning.
+_______________________________________________________________________
+4.3 AI Conversation Log (Appendix)
+Include 5-8 key AI conversations that significantly influenced your project:
+Format:
+### Conversation 1: [Title]
+**Phase**: [Planning/Modeling/Dashboard/Reporting]
+**My Prompt**:
+[Paste your prompt to AI]
+**AI Response**:
+[Paste relevant parts of AI's response]
+**How I Used It**:
+[Explain how this influenced your project]
+[Did you adopt, modify, or reject? Why?]
+**Value**:
+[Why was this conversation valuable?]
+Select conversations that:
+Changed your approach significantly
+Provided breakthrough insights
+Solved major blockers
+Demonstrated AI strengths/limitations
+Deliverables Checklist
+1. Complete Code Package
+IOT106TC_Assignment2_[StudentID]/
+├── README.md                          # Project overview, setup, run instructions
+├── requirements.txt                   # All Python dependencies
+├── data/
+│   └── [scenario]_cleaned.csv        # From Assignment 1
+├── notebooks/
+│   ├── 01_feature_engineering.ipynb
+│   ├── 02_model_training.ipynb
+│   └── 03_model_evaluation.ipynb
+├── models/                            # Saved model files (optional)
+│   └── final_model.pkl
+├── dashboard/
+│   ├── app.py                         # Streamlit/Dash app OR
+│   └── dashboard.twb/dashboard.pbix  # BI tool file
+├── figures/                           # High-res figures for report
+└── config/                            # Configuration files (if any)
+Code Requirements:
+All files well-commented in English
+Modular, reproducible code
+Clear README with:
+Project description
+Setup instructions (conda/pip install)
+How to run dashboard
+Known issues/limitations
+2. Project Report
+Structure:
+Executive Summary
+Business Background & Problem Continuation
+Reference Assignment 1 scenario
+Summarize EDA findings
+State modeling goals
+Data & Features
+Final feature set with justifications
+Feature importance analysis
+Connection to Assignment 1 insights
+Modeling Methodology
+Algorithms tested and rationale
+Training/validation approach
+Hyperparameter tuning
+Final model selection
+Model Results & Evaluation
+Performance comparison table
+Detailed metrics analysis
+Error analysis with visualizations
+Model interpretability
+Dashboard Design & Implementation
+Design rationale (audience, use cases)
+Architecture overview
+Key features and interactivity
+Screenshots with annotations
+Business Recommendations & Roadmap
+Top 5 recommendations (detailed)
+Implementation roadmap with phases
+Resource requirements
+Expected ROI
+AI Collaboration Report
+AI usage across phases
+Critical reflection
+Reference
+CANNOT be generated by AI and you have to check their accessibility
+Appendix:
+Additional figures/charts
+AI conversation log
+Assignment 1 reference (continuity statement)
+Format Requirements:
+Professional report formatting
+Numbered sections and figures
+In-text citations for visuals
+High-resolution figures (300 DPI minimum)
+Clear, concise business writing
+3. Interactive Dashboard
+Option A (Python):
+Source code: dashboard/app.py
+Screenshots: 5-8 screenshots showing different views/filters
+Demo video (3-5 minutes): Walking through dashboard features
+Optional: Deployed URL
+Option B (BI Tool):
+Dashboard file: dashboard/dashboard.twb or dashboard.pbix
+Screenshots: 5-8 screenshots
+Demo video (3-5 minutes): Walking through dashboard features
+4. Presentation Video (5-7 minutes)
+Structure:
+Project Background (1 minute)
+Problem statement
+Scenario overview
+Assignment 1 connection
+Model Development & Results (2 minutes)
+Features created
+Models tested
+Final model performance
+Key insights from modeling
+Dashboard Demonstration (3 minutes)
+Live walkthrough OR screen recording
+Show key features
+Demonstrate interactivity
+Explain recommendations
+Business Impact & Recommendations (1 minute)
+Top 3 recommendations
+Expected ROI
+Next steps
+Video Requirements:
+Clear audio and screen recording
+Professional presentation style
+Show your face OR screen with voiceover
+Upload to somewhere or provide video file
+5. Assignment 1 Appendix
+Attach your Assignment 1 report as appendix:
+Show continuity between assignments
+Highlight how EDA findings informed modelling
+Reference data cleaning decisions
+_______________________________________________________________________
+Grading Criteria (100 points)
+Component
+Excellent
+Proficient
+Developing
+Insufficient
+Part 1: Predictive Modeling (40 points)
+Innovative feature engineering with 10+ creative features; sophisticated models with hyperparameter tuning; excellent model accuracy; comprehensive error analysis with deep insights. (36-40)
+Solid feature engineering with 8-10 features; appropriate models with some tuning; good model accuracy; adequate error analysis. (28-35)
+Basic feature engineering with 5-7 features; simple models with minimal tuning; fair model accuracy; basic error analysis. (20-27)
+Minimal features (<5); models lack justification; poor accuracy or no error analysis; code doesn't run properly. (0-19)
+Part 2: Interactive Dashboard (30 points)
+Professional dashboard with exceptional UX; 5+ KPIs, 3+ filters, creative visualizations; fully interactive with drill-down capabilities; clear business value. (26-30)
+Good dashboard with solid UX; 3-4 KPIs, 2-3 filters, effective visualizations; basic interactivity; clear business context. (21-25)
+Functional dashboard with basic UX; 2-3 KPIs, 1-2 filters, simple visualizations; limited interactivity; some business context. (15-20)
+Dashboard missing key components; poor UX; doesn't demonstrate model insights; not functional or missing. (0-14)
+Part 3: Business Report (20 points)
+Exceptional executive summary with quantified ROI; 5+ specific recommendations with detailed roadmap; clear technical documentation; publication-quality writing. (18-20)
+Good executive summary; 4-5 recommendations with some quantification; adequate technical documentation; clear writing. (15-17)
+Basic executive summary; 3-4 recommendations; limited quantification; minimal technical documentation; adequate writing. (12-14)
+Weak or missing executive summary; <3 recommendations; no quantification; poor documentation; unclear writing. (0-11)
+Part 4: Presentation Video (10 points)
+Engaging 5-7 min presentation; clear demo of dashboard with interactivity; strong business case with ROI; professional delivery; excellent time management. (9-10)
+Good 5-7 min presentation; solid dashboard demo; adequate business case; clear delivery; good time management. (7-8)
+Basic presentation; partial dashboard demo; limited business case; acceptable delivery; time issues (too short/long). (5-6)
+Presentation too short (<4 min) or missing; no dashboard demo; no business case; poor delivery; major time issues. (0-4)
+_______________________________________________________________________
+Grading Philosophy
+Business Value > Theoretical Complexity
+We value:
+Simple models well-explained over complex models poorly understood
+Actionable insights over algorithmic sophistication
+Production-worthy dashboards over experimental prototypes
+Clear business communication over technical jargon
+Excellent projects demonstrate:
+Practical Impact: Real value to stakeholders
+Reproducibility: Someone else can run your code
+Clarity: Non-technical stakeholders understand the value
+Completeness: All components work together seamlessly
+We do NOT reward:
+Over-engineering without business justification
+Cutting-edge algorithms used inappropriately
+Impressive technical work without business application
+Incomplete or non-functional deliverables
+_______________________________________________________________________
+Submission Requirements
+File Naming & Organization
+ZIP File Structure:
+Assignment2_[StudentID]_[Scenario].zip
+├── Assignment2_Report_[StudentID].pdf
+├── Assignment2_Presentation_[StudentID].mp4
+├── Assignment2_Code_[StudentID].zip
+│   └── [Code package structure from above]
+└── Assignment1_Reference_[StudentID].pdf (optional)
+Examples:
+ZIP: Assignment2_2012345_SmartFactory.zip
+Report: Assignment2_Report_2012345.pdf
+Video: Assignment2_Presentation_2012345.mp4
+Code: Assignment2_Code_2012345.zip
+Submission to LMO
+Upload:
+Single ZIP file with all deliverables
+Maximum size: 100MB (use compression)
+Check all files are included before submitting
+Late Submission Policy:
+Follow the university policies
+Resubmission:
+You may resubmit before the deadline (only latest version graded)
+After deadline: No resubmissions except in extenuating circumstances
+Academic Integrity
+Allowed:
+Using AI tools (ChatGPT, Claude, 文心一言, etc.) for assistance
+Referencing online tutorials, documentation, Stack Overflow
+Discussing approaches with classmates (high-level only)
+NOT Allowed:
+Copying code or reports from other students
+Using someone else's dashboard as your own
+Having AI write entire sections without your understanding
+Use AI to generate fake references
+Falsifying model results or metrics
+Required:
+Cite ALL AI assistance in AI Collaboration Report
+Understand ALL code you submit - you may be asked to explain it during grading
+Submit ORIGINAL work - your analysis, your insights, your recommendations
+Reference all external sources (code snippets, documentation, etc.)
+Consequences of Academic Misconduct:
+Follow the university policies and procedures
+AI Citation Format:
+The feature engineering approach (Section 3.1) was developed with
+assistance from 文心一言 (Ernie Bot). The AI suggested lag features
+and rolling statistics, which I then adapted based on domain knowledge.
+Specific AI conversations are documented in the AI Collaboration Report
+(Section 6, Appendix).
+_______________________________________________________________________
+Resources & Support
+Dataset & Code Resources
+Assignment 1 cleaned dataset (use directly)
+Course-provided sample notebooks for reference
+Feature engineering examples in Resources/ folder
+Dashboard templates in Resources/ folder
+AI Tools (Recommended)
+General Assistance: kimi (https://www.kimi.com/) or 通义千问 (https://tongyi.aliyun.com/) or Others
+Code Generation: GitHub Copilot (free with student email)
+Technical Support
+Office Hours: Book 1-on-1 consultation for specific issues
+LMO Forum: Post questions - 48-hour response time
+Lab Sessions: TAs available for guidance
+Email: Module leader for urgent issues
+Learning Resources
+Scikit-learn Documentation: https://scikit-learn.org/stable/user_guide.html
+Streamlit Documentation: https://docs.streamlit.io/
+Plotly Dash Guide: https://dash.plotly.com/
+Feature Engineering Guide: Search "feature engineering for [your scenario]" with AI
+Common Pitfalls to Avoid
+Starting from scratch: Use your Assignment 1 work!
+Over-engineering: Simple models often work just as well
+Ignoring business context: Technical excellence ≠ business value
+Poor documentation: If you can't explain it, you don't understand it
+Last-minute AI citation: Document AI use as you go
+Non-reproducible code: Test on a clean machine before submitting
+Weak dashboard: Invest time here - it's 30% of your grade!
+Vague recommendations: Be specific, quantify impact, provide roadmap
+_______________________________________________________________________
+Frequently Asked Questions
+📊 Grade Distribution FAQ
+Q: Is it hard to pass Assignment 2?
+A: NO! Passing (40+ points) is designed to be VERY EASY. If you build 2 basic models that run and create a simple dashboard that works, you should pass. We want everyone to pass!
+Q: What if my model has terrible accuracy (e.g., R² = 0.3)?
+A: That's OK for passing! You can still pass if you:
+Submit everything required
+Your code runs without errors
+Your dashboard works
+You explain what you tried (even if it didn't work well)
+40-55 points = Complete & Functional, regardless of model accuracy!
+Q: What's the difference between 40+ points and 70+ points?
+A: The difference is excellence and innovation:
+40+ points (Third Class): You completed everything (barely working)
+- 2 basic models (Linear Regression + Random Forest with defaults)   - 3-5 simple features   - Dashboard with 2 filters and 2 charts that work   - Basic report (10-12 pages, bullet points OK)   - Model accuracy can be poor
+70+ points (First Class): You went far beyond
+- Innovative feature engineering (10+ creative features)   - Sophisticated models with hyperparameter tuning   - Excellent model accuracy OR exceptional insights   - Professional dashboard with creative UX   - Deep business insights with quantified ROI   - Publication-quality report
+Q: Can I get 70+ without being a machine learning expert?
+A: YES! Good grades reward:
+Solid modeling (good features, reasonable accuracy)
+Good analysis and interpretation
+Clear business recommendations
+Professional-looking dashboard
+Well-organized report and video
+You don't need cutting-edge algorithms - you need solid, well-justified work!
+Q: What does it take to get 80+?
+A: Excellent work requires exceptional work in MULTIPLE areas:
+Innovative modeling: Creative features, sophisticated algorithms, excellent accuracy
+Deep analysis: Error patterns, feature importance, business interpretation
+Quantified business value: ROI calculations, cost-benefit analysis
+Professional quality: Exceptional dashboard, publication-ready report
+Domain expertise: Deep understanding of business context
+Q: If I do the absolute minimum, what will I get?
+A: If you do exactly what's in "How to Secure Your 40 Points" with working code, you should get 40-50 points. This is a PASS!
+Q: I'm a complete beginner. Can I still pass?
+A: YES! Use AI tools extensively:
+Ask ChatGPT/Claude/Copilot to write your model code
+Use Streamlit templates for the dashboard
+Copy sklearn examples for evaluation metrics
+Focus on making things WORK, not making them perfect
+Completeness > Quality for passing.
+_______________________________________________________________________
+Fairness FAQ
+Q: Is grading fair across different scenarios? What if my scenario is harder to model?
+A: YES, grading is fair. We use scenario-calibrated rubrics to ensure equal effort = equal grades:
+Different expectations for each scenario:
+NASA: Focus on sensor degradation modeling, RUL regression
+Not expected to achieve perfect prediction (this is HARD real-world data)
+UCI: Focus on temporal feature engineering, forecasting
+Expected to capture multi-scale patterns
+Walmart: Focus on external factor integration
+Expected to go deeper into business factors
+Grader training: All graders will use scenario-specific evaluation criteria
+Model performance context: You're judged on process and insights, not just metrics. A well-justified model with MAE = 25 (NASA) can score higher than a poorly-justified model with MAPE = 8% (Walmart)
+Q: What if my model performance is poor (e.g., R² < 0.5 or high MAE)?
+A: That's okay if you:
+Explain WHY the model struggles (data limitations, complexity)
+Show thorough feature engineering attempts
+Provide value through insights and dashboard
+Demonstrate learning and effort
+Bottom line: Focus on the scenario-specific expectations listed in the grading criteria. You can achieve excellent grades by meeting YOUR scenario's requirements, not by comparing to other scenarios.
+_______________________________________________________________________
+Q: Can I change my scenario from Assignment 1? A: No, you must continue with the same scenario. This is a continuous project.
+Q: Do I need to include my Assignment 1 code? A: No, just reference it and use the cleaned dataset. Focus on new work.
+Q: Can I use deep learning models (neural networks)? A: Yes, but only if you can justify why they're better than simpler models. Complexity alone won't earn extra points.
+Q: Should I deploy my dashboard to the cloud? A: Not required, but recommended. Streamlit Cloud is free and easy. There are some free resources available.
+Q: What if my model performance is poor (e.g., R² < 0.5)? A: That's okay if you can explain WHY and provide value in other ways (good insights, useful dashboard). Focus on what you learned.
+Q: Can I work with a classmate? A: You can discuss approaches high-level, but all code, analysis, and writing must be your own original work.
+Q: How long should the presentation video be? A: 5-7 minutes maximum. Focus on demonstrating your dashboard and business value.
+Q: Do I need to include all code in the report? A: No, include key snippets in the report, full code in the submitted files.
+Q: Can I use a different BI tool (e.g., Google Data Studio)? A: Yes, but check if it meets all requirements first. Get approval if unsure.
+_______________________________________________________________________
+Final Notes
+What Makes an Excellent Project?
+Continuity: Clear connection to Assignment 1
+Business Focus: Every technical decision tied to business value
+Reproducibility: Clean code, good documentation, someone else could run it
+Quality: Professional dashboard, clear report, polished presentation
+Honesty: Acknowledging limitations, validating AI outputs, critical thinking
+Completeness: All requirements met, all deliverables included
+Success Indicators
+✅ You're on track if:
+Your final model is justified by EDA findings
+Your dashboard answers stakeholder questions
+Your recommendations are specific and actionable
+You can explain every aspect of your project
+You documented AI assistance throughout
+❌ You need help if:
+Your model choice isn't connected to Assignment 1 insights
+Your dashboard is just charts without context
+Your recommendations are vague (e.g., "do more analysis")
+You don't understand parts of your own code
+You're rushing to document AI use at the end
+Getting Help
+Don't struggle alone!
+Post questions on LMO forum
+Attend office hours
+Use AI tools for debugging
+Ask classmates for high-level guidance
+But:
+Don't copy others' work
+Don't let AI do your thinking for you
+Don't wait until the last minute to ask for help
+_______________________________________________________________________
+Module Leader Contact
+Module Leader: Dr. Yuji Dong
+Email: Yuji.Dong02@xjtlu.edu.cn
+Office Hours: Monday and Tuesday 2 – 5 PM
+LMO Forum: Post questions - your classmates probably have the same questions!
+Good luck! This is a challenging but rewarding assignment. You'll build a complete end-to-end data science project that demonstrates valuable skills for your future career.

@@ -1,0 +1,9 @@
+metric,value
+Total rows (raw),20631
+Total rows (after deduplication),20631
+Columns,26
+Missing values (total),0
+Duplicate rows removed,0
+Near-constant sensor channels (std < 0.01),7
+"Outlier rows flagged (3×IQR, any sensor)",1911
+Engineered features added,16

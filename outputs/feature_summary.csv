@@ -1,0 +1,43 @@
+feature,description,dtype
+unit_number,Engine identifier (1–100 in FD001),int64
+time_in_cycles,Operational cycle index (1 = first cycle recorded),int64
+operational_setting_1,Flight condition parameter 1,float64
+operational_setting_2,Flight condition parameter 2,float64
+operational_setting_3,Flight condition parameter 3,float64
+sensor_1,IoT sensor channel sensor_1 (anonymised — physical unit unknown),float64
+sensor_2,IoT sensor channel sensor_2 (anonymised — physical unit unknown),float64
+sensor_3,IoT sensor channel sensor_3 (anonymised — physical unit unknown),float64
+sensor_4,IoT sensor channel sensor_4 (anonymised — physical unit unknown),float64
+sensor_5,IoT sensor channel sensor_5 (anonymised — physical unit unknown),float64
+sensor_6,IoT sensor channel sensor_6 (anonymised — physical unit unknown),float64
+sensor_7,IoT sensor channel sensor_7 (anonymised — physical unit unknown),float64
+sensor_8,IoT sensor channel sensor_8 (anonymised — physical unit unknown),float64
+sensor_9,IoT sensor channel sensor_9 (anonymised — physical unit unknown),float64
+sensor_10,IoT sensor channel sensor_10 (anonymised — physical unit unknown),float64
+sensor_11,IoT sensor channel sensor_11 (anonymised — physical unit unknown),float64
+sensor_12,IoT sensor channel sensor_12 (anonymised — physical unit unknown),float64
+sensor_13,IoT sensor channel sensor_13 (anonymised — physical unit unknown),float64
+sensor_14,IoT sensor channel sensor_14 (anonymised — physical unit unknown),float64
+sensor_15,IoT sensor channel sensor_15 (anonymised — physical unit unknown),float64
+sensor_16,IoT sensor channel sensor_16 (anonymised — physical unit unknown),float64
+sensor_17,IoT sensor channel sensor_17 (anonymised — physical unit unknown),int64
+sensor_18,IoT sensor channel sensor_18 (anonymised — physical unit unknown),int64
+sensor_19,IoT sensor channel sensor_19 (anonymised — physical unit unknown),float64
+sensor_20,IoT sensor channel sensor_20 (anonymised — physical unit unknown),float64
+sensor_21,IoT sensor channel sensor_21 (anonymised — physical unit unknown),float64
+max_cycle,Total engine lifetime (cycles to failure),int64
+RUL,Remaining Useful Life = max_cycle - time_in_cycles,int64
+cycle_ratio,Normalised lifecycle position = time_in_cycles / max_cycle,float64
+life_stage,"Lifecycle stage: early (≤0.33), mid (0.33–0.67), late (>0.67)",category
+near_failure,Binary flag: 1 if RUL ≤ 30 cycles (EDA risk band indicator),int64
+capped_RUL,RUL capped at 125 — for Assignment 2 modeling stability only,int64
+sensor_11_roll20,"20-cycle rolling mean of sensor_11, computed per engine",float64
+sensor_4_roll20,"20-cycle rolling mean of sensor_4, computed per engine",float64
+sensor_12_roll20,"20-cycle rolling mean of sensor_12, computed per engine",float64
+sensor_7_roll20,"20-cycle rolling mean of sensor_7, computed per engine",float64
+sensor_15_roll20,"20-cycle rolling mean of sensor_15, computed per engine",float64
+sensor_21_roll20,"20-cycle rolling mean of sensor_21, computed per engine",float64
+sensor_20_roll20,"20-cycle rolling mean of sensor_20, computed per engine",float64
+sensor_2_roll20,"20-cycle rolling mean of sensor_2, computed per engine",float64
+sensor_17_roll20,"20-cycle rolling mean of sensor_17, computed per engine",float64
+sensor_3_roll20,"20-cycle rolling mean of sensor_3, computed per engine",float64
