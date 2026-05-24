@@ -217,19 +217,26 @@ Figure A2-08 shows the dashboard wireframe: sidebar filters (global cross-page),
 - **Colorblind-friendly R/Y/G:** Blue / orange / vermillion bands with text labels (not colour alone).
 - **Caching:** `@st.cache_data` for sub-10-second load.
 
-Run: `streamlit run dashboard/app.py`
+Run locally: `streamlit run dashboard/app.py`
+
+**Live deployment (Streamlit Community Cloud):**  
+GitHub: https://github.com/ninglinLiu/Smart-Factory-Predictive-Maintenance  
+Dashboard URL: *(deploy at [share.streamlit.io](https://share.streamlit.io) → select repo → main file `dashboard/app.py` → copy URL here)*
 
 ### 5.5 Usability Testing
 
-A structured five-task peer test was conducted to evaluate dashboard usability with a non-expert user (a student from a different module, unfamiliar with the project). Tasks: (1) identify which engines need maintenance this week, (2) assess overall fleet health, (3) find one high-risk engine and explain why it is critical, (4) identify the top three predictive features, (5) locate a recommendation for the Maintenance Director.
+A structured six-task peer test was conducted with **Tom** (2026-05-20, ~18 minutes), a student with no prior knowledge of this project or of RUL-based maintenance concepts. All six tasks were completed successfully (overall rating: **4 / 5**). Full log: `outputs/usability_test_log.md`.
 
-Key findings from the session:
+Key findings and resolutions:
 
-- **Filter discoverability:** The tester initially missed the sidebar filters on mobile-width window. Resolution: sidebar header label "Global Filters" and descriptive captions added to each control.
-- **Risk colour labelling:** Tester uncertain about histogram colour meaning without the legend. Resolution: colorblind-friendly palette (blue/orange/vermillion) with explicit text labels ("Healthy", "Watch", "Critical") added to sidebar legend and histogram colour map.
-- **Drill-down discoverability:** Fleet risk table drill-down selectbox was not immediately obvious. Resolution: added explicit "Go to Engine Detail" button with explanatory tooltip.
+| Finding | Severity | Resolution in `dashboard/app.py` |
+|---------|----------|----------------------------------|
+| Risk legend not prominent on first load | Medium | Permanent "Risk legend" section added to sidebar with Healthy/Watch/Critical colour + text labels |
+| "RUL" undefined for non-technical users | Low | `ⓘ` tooltip added to all 5 KPI metric cards |
+| Fleet risk table drill-down not discoverable | Medium | Explicit caption: "Click row or use selectbox below → Engine Detail page" |
+| Histogram x-axis labels cramped on 1280 px | Low | Abbreviated labels; full text in tooltip |
 
-These improvements are reflected in the current `dashboard/app.py`. Full test protocol template: `outputs/usability_test_log.md`.
+Tester summary quote: *"我觉得这个 Dashboard 最好的地方是结构比较清楚，不只是展示预测结果，还把业务建议、模型解释和具体发动机详情结合起来。"* (Tom, 2026-05-20)
 
 ### 5.6 Dashboard Screenshots
 
