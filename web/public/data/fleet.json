@@ -1,0 +1,713 @@
+{
+  "threshold": 30,
+  "engines": [
+    {
+      "unit_number": 1,
+      "true_RUL": 112.0,
+      "pred_final": 175.7595625568252,
+      "status": "Healthy",
+      "abs_error": 63.75956255682519
+    },
+    {
+      "unit_number": 2,
+      "true_RUL": 98.0,
+      "pred_final": 138.14868033696496,
+      "status": "Healthy",
+      "abs_error": 40.14868033696496
+    },
+    {
+      "unit_number": 3,
+      "true_RUL": 69.0,
+      "pred_final": 37.38401984052312,
+      "status": "Watch",
+      "abs_error": 31.615980159476877
+    },
+    {
+      "unit_number": 4,
+      "true_RUL": 82.0,
+      "pred_final": 64.3596809972872,
+      "status": "Healthy",
+      "abs_error": 17.6403190027128
+    },
+    {
+      "unit_number": 5,
+      "true_RUL": 91.0,
+      "pred_final": 70.83086603439385,
+      "status": "Healthy",
+      "abs_error": 20.16913396560615
+    },
+    {
+      "unit_number": 6,
+      "true_RUL": 93.0,
+      "pred_final": 93.32294212027296,
+      "status": "Healthy",
+      "abs_error": 0.32294212027295544
+    },
+    {
+      "unit_number": 7,
+      "true_RUL": 91.0,
+      "pred_final": 87.90663584484035,
+      "status": "Healthy",
+      "abs_error": 3.093364155159648
+    },
+    {
+      "unit_number": 8,
+      "true_RUL": 95.0,
+      "pred_final": 65.16154120209418,
+      "status": "Healthy",
+      "abs_error": 29.838458797905815
+    },
+    {
+      "unit_number": 9,
+      "true_RUL": 111.0,
+      "pred_final": 136.2449216456762,
+      "status": "Healthy",
+      "abs_error": 25.244921645676186
+    },
+    {
+      "unit_number": 10,
+      "true_RUL": 96.0,
+      "pred_final": 102.3013988029708,
+      "status": "Healthy",
+      "abs_error": 6.301398802970795
+    },
+    {
+      "unit_number": 11,
+      "true_RUL": 97.0,
+      "pred_final": 91.50057812872085,
+      "status": "Healthy",
+      "abs_error": 5.499421871279154
+    },
+    {
+      "unit_number": 12,
+      "true_RUL": 124.0,
+      "pred_final": 74.27146675729156,
+      "status": "Healthy",
+      "abs_error": 49.72853324270844
+    },
+    {
+      "unit_number": 13,
+      "true_RUL": 95.0,
+      "pred_final": 53.57688559754908,
+      "status": "Watch",
+      "abs_error": 41.42311440245092
+    },
+    {
+      "unit_number": 14,
+      "true_RUL": 107.0,
+      "pred_final": 133.2897357497175,
+      "status": "Healthy",
+      "abs_error": 26.289735749717494
+    },
+    {
+      "unit_number": 15,
+      "true_RUL": 83.0,
+      "pred_final": 123.6965993600616,
+      "status": "Healthy",
+      "abs_error": 40.6965993600616
+    },
+    {
+      "unit_number": 16,
+      "true_RUL": 84.0,
+      "pred_final": 122.7528227386697,
+      "status": "Healthy",
+      "abs_error": 38.75282273866971
+    },
+    {
+      "unit_number": 17,
+      "true_RUL": 50.0,
+      "pred_final": 43.39593068890223,
+      "status": "Watch",
+      "abs_error": 6.604069311097767
+    },
+    {
+      "unit_number": 18,
+      "true_RUL": 28.0,
+      "pred_final": 21.95124974320817,
+      "status": "Critical",
+      "abs_error": 6.0487502567918305
+    },
+    {
+      "unit_number": 19,
+      "true_RUL": 87.0,
+      "pred_final": 75.31009159013283,
+      "status": "Healthy",
+      "abs_error": 11.689908409867172
+    },
+    {
+      "unit_number": 20,
+      "true_RUL": 16.0,
+      "pred_final": 5.241068263668583,
+      "status": "Critical",
+      "abs_error": 10.758931736331416
+    },
+    {
+      "unit_number": 21,
+      "true_RUL": 57.0,
+      "pred_final": 69.96897736850397,
+      "status": "Healthy",
+      "abs_error": 12.968977368503971
+    },
+    {
+      "unit_number": 22,
+      "true_RUL": 111.0,
+      "pred_final": 164.10209918218888,
+      "status": "Healthy",
+      "abs_error": 53.10209918218888
+    },
+    {
+      "unit_number": 23,
+      "true_RUL": 113.0,
+      "pred_final": 144.72788406860926,
+      "status": "Healthy",
+      "abs_error": 31.727884068609256
+    },
+    {
+      "unit_number": 24,
+      "true_RUL": 20.0,
+      "pred_final": 19.90455808435282,
+      "status": "Critical",
+      "abs_error": 0.09544191564717863
+    },
+    {
+      "unit_number": 25,
+      "true_RUL": 145.0,
+      "pred_final": 148.92235577684625,
+      "status": "Healthy",
+      "abs_error": 3.9223557768462456
+    },
+    {
+      "unit_number": 26,
+      "true_RUL": 119.0,
+      "pred_final": 121.56305575573307,
+      "status": "Healthy",
+      "abs_error": 2.5630557557330746
+    },
+    {
+      "unit_number": 27,
+      "true_RUL": 66.0,
+      "pred_final": 104.85977536224593,
+      "status": "Healthy",
+      "abs_error": 38.85977536224593
+    },
+    {
+      "unit_number": 28,
+      "true_RUL": 97.0,
+      "pred_final": 88.69196824087645,
+      "status": "Healthy",
+      "abs_error": 8.308031759123551
+    },
+    {
+      "unit_number": 29,
+      "true_RUL": 90.0,
+      "pred_final": 117.20884501854508,
+      "status": "Healthy",
+      "abs_error": 27.208845018545077
+    },
+    {
+      "unit_number": 30,
+      "true_RUL": 115.0,
+      "pred_final": 67.54989750389451,
+      "status": "Healthy",
+      "abs_error": 47.45010249610549
+    },
+    {
+      "unit_number": 31,
+      "true_RUL": 8.0,
+      "pred_final": 8.097660081813347,
+      "status": "Critical",
+      "abs_error": 0.09766008181334662
+    },
+    {
+      "unit_number": 32,
+      "true_RUL": 48.0,
+      "pred_final": 54.55333966825081,
+      "status": "Watch",
+      "abs_error": 6.553339668250807
+    },
+    {
+      "unit_number": 33,
+      "true_RUL": 106.0,
+      "pred_final": 136.25154224119458,
+      "status": "Healthy",
+      "abs_error": 30.251542241194585
+    },
+    {
+      "unit_number": 34,
+      "true_RUL": 7.0,
+      "pred_final": 2.2619702800714405,
+      "status": "Critical",
+      "abs_error": 4.7380297199285595
+    },
+    {
+      "unit_number": 35,
+      "true_RUL": 11.0,
+      "pred_final": 3.8292600066555895,
+      "status": "Critical",
+      "abs_error": 7.1707399933444105
+    },
+    {
+      "unit_number": 36,
+      "true_RUL": 19.0,
+      "pred_final": 12.17006553425886,
+      "status": "Critical",
+      "abs_error": 6.82993446574114
+    },
+    {
+      "unit_number": 37,
+      "true_RUL": 21.0,
+      "pred_final": 25.61609446049049,
+      "status": "Critical",
+      "abs_error": 4.6160944604904905
+    },
+    {
+      "unit_number": 38,
+      "true_RUL": 50.0,
+      "pred_final": 46.053337503953856,
+      "status": "Watch",
+      "abs_error": 3.9466624960461445
+    },
+    {
+      "unit_number": 39,
+      "true_RUL": 142.0,
+      "pred_final": 158.24720233425947,
+      "status": "Healthy",
+      "abs_error": 16.24720233425947
+    },
+    {
+      "unit_number": 40,
+      "true_RUL": 28.0,
+      "pred_final": 14.500852215764713,
+      "status": "Critical",
+      "abs_error": 13.499147784235287
+    },
+    {
+      "unit_number": 41,
+      "true_RUL": 18.0,
+      "pred_final": 24.237810075998286,
+      "status": "Critical",
+      "abs_error": 6.237810075998286
+    },
+    {
+      "unit_number": 42,
+      "true_RUL": 10.0,
+      "pred_final": 7.453948097023707,
+      "status": "Critical",
+      "abs_error": 2.546051902976293
+    },
+    {
+      "unit_number": 43,
+      "true_RUL": 59.0,
+      "pred_final": 35.78961050230331,
+      "status": "Watch",
+      "abs_error": 23.21038949769669
+    },
+    {
+      "unit_number": 44,
+      "true_RUL": 109.0,
+      "pred_final": 129.99205921230023,
+      "status": "Healthy",
+      "abs_error": 20.992059212300234
+    },
+    {
+      "unit_number": 45,
+      "true_RUL": 114.0,
+      "pred_final": 58.83862752500535,
+      "status": "Watch",
+      "abs_error": 55.16137247499465
+    },
+    {
+      "unit_number": 46,
+      "true_RUL": 47.0,
+      "pred_final": 45.687069609217225,
+      "status": "Watch",
+      "abs_error": 1.3129303907827747
+    },
+    {
+      "unit_number": 47,
+      "true_RUL": 135.0,
+      "pred_final": 122.41425045922824,
+      "status": "Healthy",
+      "abs_error": 12.585749540771758
+    },
+    {
+      "unit_number": 48,
+      "true_RUL": 92.0,
+      "pred_final": 120.40133545603658,
+      "status": "Healthy",
+      "abs_error": 28.401335456036577
+    },
+    {
+      "unit_number": 49,
+      "true_RUL": 21.0,
+      "pred_final": 6.866573817679458,
+      "status": "Critical",
+      "abs_error": 14.133426182320541
+    },
+    {
+      "unit_number": 50,
+      "true_RUL": 79.0,
+      "pred_final": 119.74044855181256,
+      "status": "Healthy",
+      "abs_error": 40.74044855181256
+    },
+    {
+      "unit_number": 51,
+      "true_RUL": 114.0,
+      "pred_final": 98.39594303202772,
+      "status": "Healthy",
+      "abs_error": 15.604056967972284
+    },
+    {
+      "unit_number": 52,
+      "true_RUL": 29.0,
+      "pred_final": 24.868911983991133,
+      "status": "Critical",
+      "abs_error": 4.131088016008867
+    },
+    {
+      "unit_number": 53,
+      "true_RUL": 26.0,
+      "pred_final": 20.480214345934723,
+      "status": "Critical",
+      "abs_error": 5.519785654065277
+    },
+    {
+      "unit_number": 54,
+      "true_RUL": 97.0,
+      "pred_final": 117.14690832514496,
+      "status": "Healthy",
+      "abs_error": 20.146908325144963
+    },
+    {
+      "unit_number": 55,
+      "true_RUL": 137.0,
+      "pred_final": 118.54583166027568,
+      "status": "Healthy",
+      "abs_error": 18.45416833972432
+    },
+    {
+      "unit_number": 56,
+      "true_RUL": 15.0,
+      "pred_final": 11.382810469319436,
+      "status": "Critical",
+      "abs_error": 3.617189530680564
+    },
+    {
+      "unit_number": 57,
+      "true_RUL": 103.0,
+      "pred_final": 80.70115203954596,
+      "status": "Healthy",
+      "abs_error": 22.29884796045404
+    },
+    {
+      "unit_number": 58,
+      "true_RUL": 37.0,
+      "pred_final": 22.59484712220697,
+      "status": "Critical",
+      "abs_error": 14.405152877793029
+    },
+    {
+      "unit_number": 59,
+      "true_RUL": 114.0,
+      "pred_final": 116.1851420580184,
+      "status": "Healthy",
+      "abs_error": 2.1851420580184
+    },
+    {
+      "unit_number": 60,
+      "true_RUL": 100.0,
+      "pred_final": 94.51984578706676,
+      "status": "Healthy",
+      "abs_error": 5.480154212933243
+    },
+    {
+      "unit_number": 61,
+      "true_RUL": 21.0,
+      "pred_final": 14.57890151797381,
+      "status": "Critical",
+      "abs_error": 6.42109848202619
+    },
+    {
+      "unit_number": 62,
+      "true_RUL": 54.0,
+      "pred_final": 58.95445569627529,
+      "status": "Watch",
+      "abs_error": 4.954455696275289
+    },
+    {
+      "unit_number": 63,
+      "true_RUL": 72.0,
+      "pred_final": 59.14344122043018,
+      "status": "Watch",
+      "abs_error": 12.856558779569824
+    },
+    {
+      "unit_number": 64,
+      "true_RUL": 28.0,
+      "pred_final": 20.76312787867848,
+      "status": "Critical",
+      "abs_error": 7.236872121321522
+    },
+    {
+      "unit_number": 65,
+      "true_RUL": 128.0,
+      "pred_final": 143.37756470797032,
+      "status": "Healthy",
+      "abs_error": 15.377564707970322
+    },
+    {
+      "unit_number": 66,
+      "true_RUL": 14.0,
+      "pred_final": 9.194766571356237,
+      "status": "Critical",
+      "abs_error": 4.8052334286437635
+    },
+    {
+      "unit_number": 67,
+      "true_RUL": 77.0,
+      "pred_final": 125.09911992254196,
+      "status": "Healthy",
+      "abs_error": 48.09911992254196
+    },
+    {
+      "unit_number": 68,
+      "true_RUL": 8.0,
+      "pred_final": 5.826057271627823,
+      "status": "Critical",
+      "abs_error": 2.173942728372177
+    },
+    {
+      "unit_number": 69,
+      "true_RUL": 121.0,
+      "pred_final": 150.51742259420672,
+      "status": "Healthy",
+      "abs_error": 29.51742259420672
+    },
+    {
+      "unit_number": 70,
+      "true_RUL": 94.0,
+      "pred_final": 81.40616098982015,
+      "status": "Healthy",
+      "abs_error": 12.593839010179849
+    },
+    {
+      "unit_number": 71,
+      "true_RUL": 118.0,
+      "pred_final": 136.64644852907873,
+      "status": "Healthy",
+      "abs_error": 18.646448529078725
+    },
+    {
+      "unit_number": 72,
+      "true_RUL": 50.0,
+      "pred_final": 52.88625640228831,
+      "status": "Watch",
+      "abs_error": 2.8862564022883106
+    },
+    {
+      "unit_number": 73,
+      "true_RUL": 131.0,
+      "pred_final": 121.02562985451986,
+      "status": "Healthy",
+      "abs_error": 9.974370145480137
+    },
+    {
+      "unit_number": 74,
+      "true_RUL": 126.0,
+      "pred_final": 90.14782877955253,
+      "status": "Healthy",
+      "abs_error": 35.852171220447474
+    },
+    {
+      "unit_number": 75,
+      "true_RUL": 113.0,
+      "pred_final": 125.97710572113114,
+      "status": "Healthy",
+      "abs_error": 12.977105721131139
+    },
+    {
+      "unit_number": 76,
+      "true_RUL": 10.0,
+      "pred_final": 3.003283873085325,
+      "status": "Critical",
+      "abs_error": 6.996716126914675
+    },
+    {
+      "unit_number": 77,
+      "true_RUL": 34.0,
+      "pred_final": 15.952755949323189,
+      "status": "Critical",
+      "abs_error": 18.04724405067681
+    },
+    {
+      "unit_number": 78,
+      "true_RUL": 107.0,
+      "pred_final": 157.15642855476688,
+      "status": "Healthy",
+      "abs_error": 50.156428554766876
+    },
+    {
+      "unit_number": 79,
+      "true_RUL": 63.0,
+      "pred_final": 91.57115792459535,
+      "status": "Healthy",
+      "abs_error": 28.571157924595354
+    },
+    {
+      "unit_number": 80,
+      "true_RUL": 90.0,
+      "pred_final": 78.38836042397801,
+      "status": "Healthy",
+      "abs_error": 11.611639576021986
+    },
+    {
+      "unit_number": 81,
+      "true_RUL": 8.0,
+      "pred_final": 3.6831554442765673,
+      "status": "Critical",
+      "abs_error": 4.316844555723433
+    },
+    {
+      "unit_number": 82,
+      "true_RUL": 9.0,
+      "pred_final": 3.004827914293804,
+      "status": "Critical",
+      "abs_error": 5.995172085706196
+    },
+    {
+      "unit_number": 83,
+      "true_RUL": 137.0,
+      "pred_final": 129.26994130532466,
+      "status": "Healthy",
+      "abs_error": 7.730058694675336
+    },
+    {
+      "unit_number": 84,
+      "true_RUL": 58.0,
+      "pred_final": 46.757779780939416,
+      "status": "Watch",
+      "abs_error": 11.242220219060584
+    },
+    {
+      "unit_number": 85,
+      "true_RUL": 118.0,
+      "pred_final": 151.90782051150384,
+      "status": "Healthy",
+      "abs_error": 33.90782051150384
+    },
+    {
+      "unit_number": 86,
+      "true_RUL": 89.0,
+      "pred_final": 91.51096805507872,
+      "status": "Healthy",
+      "abs_error": 2.5109680550787203
+    },
+    {
+      "unit_number": 87,
+      "true_RUL": 116.0,
+      "pred_final": 156.38090811233678,
+      "status": "Healthy",
+      "abs_error": 40.38090811233678
+    },
+    {
+      "unit_number": 88,
+      "true_RUL": 115.0,
+      "pred_final": 128.31350659210312,
+      "status": "Healthy",
+      "abs_error": 13.313506592103124
+    },
+    {
+      "unit_number": 89,
+      "true_RUL": 136.0,
+      "pred_final": 91.80548447914724,
+      "status": "Healthy",
+      "abs_error": 44.19451552085276
+    },
+    {
+      "unit_number": 90,
+      "true_RUL": 28.0,
+      "pred_final": 14.632547611385364,
+      "status": "Critical",
+      "abs_error": 13.367452388614636
+    },
+    {
+      "unit_number": 91,
+      "true_RUL": 38.0,
+      "pred_final": 9.279328877182746,
+      "status": "Critical",
+      "abs_error": 28.720671122817254
+    },
+    {
+      "unit_number": 92,
+      "true_RUL": 20.0,
+      "pred_final": 15.82085576668361,
+      "status": "Critical",
+      "abs_error": 4.179144233316389
+    },
+    {
+      "unit_number": 93,
+      "true_RUL": 85.0,
+      "pred_final": 33.870984675402084,
+      "status": "Watch",
+      "abs_error": 51.129015324597916
+    },
+    {
+      "unit_number": 94,
+      "true_RUL": 55.0,
+      "pred_final": 30.204769278755045,
+      "status": "Watch",
+      "abs_error": 24.795230721244955
+    },
+    {
+      "unit_number": 95,
+      "true_RUL": 128.0,
+      "pred_final": 106.77182201583824,
+      "status": "Healthy",
+      "abs_error": 21.22817798416176
+    },
+    {
+      "unit_number": 96,
+      "true_RUL": 137.0,
+      "pred_final": 133.9431348390191,
+      "status": "Healthy",
+      "abs_error": 3.056865160980891
+    },
+    {
+      "unit_number": 97,
+      "true_RUL": 82.0,
+      "pred_final": 70.63262925078067,
+      "status": "Healthy",
+      "abs_error": 11.367370749219333
+    },
+    {
+      "unit_number": 98,
+      "true_RUL": 59.0,
+      "pred_final": 47.31841867510668,
+      "status": "Watch",
+      "abs_error": 11.681581324893322
+    },
+    {
+      "unit_number": 99,
+      "true_RUL": 117.0,
+      "pred_final": 122.33309849023978,
+      "status": "Healthy",
+      "abs_error": 5.333098490239777
+    },
+    {
+      "unit_number": 100,
+      "true_RUL": 20.0,
+      "pred_final": 11.76568802425089,
+      "status": "Critical",
+      "abs_error": 8.23431197574911
+    }
+  ],
+  "summary": {
+    "engines_monitored": 100,
+    "mean_pred_rul": 75.4,
+    "critical_count": 28,
+    "test_mae": 18.0,
+    "n_features": 47,
+    "model_name": "RandomForest"
+  }
+}

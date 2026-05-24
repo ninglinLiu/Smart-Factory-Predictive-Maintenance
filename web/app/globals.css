@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0e1117;
+  color: #fafafa;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 1.25rem;
+  background: #262730;
+  border-right: 1px solid #3a3b45;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.sidebar label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.sidebar input[type="range"],
+.sidebar select {
+  width: 100%;
+}
+
+.sidebar .legend {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #3a3b45;
+  font-size: 0.85rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.nav button {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.nav button.active {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+}
+
+.main h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.caption {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.kpi {
+  background: #262730;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.kpi .label {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.kpi .value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #3a3b45;
+  text-align: left;
+}
+
+th {
+  color: #aaa;
+}
+
+.status-critical {
+  color: #d55e00;
+  font-weight: 600;
+}
+
+.status-watch {
+  color: #e69f00;
+  font-weight: 600;
+}
+
+.status-healthy {
+  color: #0072b2;
+  font-weight: 600;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin: 0.75rem 0;
+}
+
+.alert.error {
+  background: rgba(213, 94, 0, 0.2);
+  border: 1px solid #d55e00;
+}
+
+.alert.warn {
+  background: rgba(230, 159, 0, 0.2);
+  border: 1px solid #e69f00;
+}
+
+.alert.ok {
+  background: rgba(0, 114, 178, 0.2);
+  border: 1px solid #0072b2;
+}
+
+.rec {
+  background: #262730;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.rec summary {
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.rec .body {
+  padding: 0 1rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

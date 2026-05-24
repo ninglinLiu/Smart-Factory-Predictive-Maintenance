@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "time_in_cycles",
+    "perm_importance_mean": 0.4375244338108525
+  },
+  {
+    "feature": "pca_score_1",
+    "perm_importance_mean": 0.1764695495338438
+  },
+  {
+    "feature": "sensor_4_min20",
+    "perm_importance_mean": 0.0597844750203582
+  },
+  {
+    "feature": "sensor_14",
+    "perm_importance_mean": 0.0488698562357024
+  },
+  {
+    "feature": "baseline_deviation",
+    "perm_importance_mean": 0.0436822724119571
+  },
+  {
+    "feature": "sensor_12_std20",
+    "perm_importance_mean": 0.0254471975046425
+  },
+  {
+    "feature": "sensor_11_slope20",
+    "perm_importance_mean": 0.0239152920747403
+  },
+  {
+    "feature": "sensor_11_std20",
+    "perm_importance_mean": 0.0177264016215338
+  },
+  {
+    "feature": "sensor_4_std20",
+    "perm_importance_mean": 0.0176856724890431
+  },
+  {
+    "feature": "sensor_12_slope20",
+    "perm_importance_mean": 0.0147496572230757
+  },
+  {
+    "feature": "time_since_anomaly_s11",
+    "perm_importance_mean": 0.0131813664024464
+  },
+  {
+    "feature": "sensor_11",
+    "perm_importance_mean": 0.0121315627536894
+  },
+  {
+    "feature": "sensor_11_lag1",
+    "perm_importance_mean": 0.0087414440993799
+  },
+  {
+    "feature": "sensor_4_slope20",
+    "perm_importance_mean": 0.0086026809800009
+  },
+  {
+    "feature": "sensor_4",
+    "perm_importance_mean": 0.0072198214850396
+  }
+]

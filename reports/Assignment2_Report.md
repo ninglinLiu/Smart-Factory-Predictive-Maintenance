@@ -219,9 +219,10 @@ Figure A2-08 shows the dashboard wireframe: sidebar filters (global cross-page),
 
 Run locally: `streamlit run dashboard/app.py`
 
-**Live deployment (Streamlit Community Cloud):**  
+**Live deployment (Vercel):**  
 GitHub: https://github.com/ninglinLiu/Smart-Factory-Predictive-Maintenance  
-Dashboard URL: *(deploy at [share.streamlit.io](https://share.streamlit.io) → select repo → main file `dashboard/app.py` → copy URL here)*
+Dashboard URL: https://web-iota-green-xg4s5mcj1p.vercel.app  
+*(Next.js static dashboard — same four pages and KPIs as local Streamlit version; data pre-baked from pipeline outputs.)*
 
 ### 5.5 Usability Testing
 

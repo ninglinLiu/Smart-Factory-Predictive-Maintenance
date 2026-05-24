@@ -3,9 +3,15 @@ __pycache__/
 *.py[cod]
 *.pyo
 .env
+.env.local
 venv/
 env/
 .venv/
+
+# Node / Vercel
+web/node_modules/
+web/.next/
+web/.vercel/
 
 # Jupyter
 .ipynb_checkpoints/

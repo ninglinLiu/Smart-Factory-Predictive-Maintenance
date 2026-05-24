@@ -1,0 +1,62 @@
+[
+  {
+    "id": "R1",
+    "title": "Implement Predictive Maintenance Scheduling",
+    "problem": "Calendar-based maintenance over-services healthy engines and under-services degrading ones.",
+    "solution": "Schedule inspections when model-predicted RUL < 30 cycles using RandomForest model.",
+    "expected_impact": "Model achieves MAE=18.0 cycles on held-out test engines; enables proactive scheduling ~30 cycles ahead.",
+    "implementation": "Integrate model scores into weekly maintenance review; pilot on 10 engines first.",
+    "timeline": "Short-term (8 weeks)",
+    "owner": "Maintenance Director",
+    "priority": "High",
+    "evidence": "outputs/test_metrics.csv; Figure_A2_01"
+  },
+  {
+    "id": "R2",
+    "title": "Prioritise Top Sensor Monitoring",
+    "problem": "Monitoring all 21 channels creates noise and bandwidth cost.",
+    "solution": "Focus dashboards on top features: time_in_cycles, pca_score_1, sensor_4_min20, sensor_14, baseline_deviation.",
+    "expected_impact": "Concentrate diagnostic effort on highest permutation-importance channels.",
+    "implementation": "Reconfigure SCADA alerts to top-5 sensor rolling statistics.",
+    "timeline": "Short-term (4 weeks)",
+    "owner": "IoT Engineering Team",
+    "priority": "High",
+    "evidence": "outputs/feature_importance.csv; Figure_A2_03"
+  },
+  {
+    "id": "R3",
+    "title": "Engine-Grouped Model Retraining Protocol",
+    "problem": "Row-level validation inflates performance and causes production failures.",
+    "solution": "Mandate GroupKFold cross-validation by unit_number for all model updates.",
+    "expected_impact": "Realistic generalisation estimates; prevents temporal leakage.",
+    "implementation": "Document CV protocol in MLOps runbook; automate in retraining pipeline.",
+    "timeline": "Medium-term (3 months)",
+    "owner": "Data Science Team",
+    "priority": "High",
+    "evidence": "outputs/cv_results.csv; Figure_A2_05"
+  },
+  {
+    "id": "R4",
+    "title": "Near-Failure Alert Layer",
+    "problem": "Continuous RUL alone may miss sudden degradation events.",
+    "solution": "Deploy logistic near-failure classifier alongside RUL regression for dual alerts.",
+    "expected_impact": "Classifier ROC-AUC=0.997 on training data.",
+    "implementation": "Trigger dual alert when RUL<30 OR near-failure probability>0.7.",
+    "timeline": "Medium-term (3 months)",
+    "owner": "Plant Manager",
+    "priority": "Medium",
+    "evidence": "Figure_A2_06; models/near_failure_classifier.pkl"
+  },
+  {
+    "id": "R5",
+    "title": "Investigate High-Error Engines",
+    "problem": "Some test engines show large prediction errors indicating model blind spots.",
+    "solution": "Root-cause analysis on worst-20 error engines; collect operational context.",
+    "expected_impact": "Identify feature gaps; reduce MAE on outlier engines by 10-15%.",
+    "implementation": "Review outputs/error_analysis.csv monthly; augment features for outlier cohorts.",
+    "timeline": "Long-term (6 months)",
+    "owner": "Reliability Engineering",
+    "priority": "Medium",
+    "evidence": "outputs/error_analysis.csv"
+  }
+]
